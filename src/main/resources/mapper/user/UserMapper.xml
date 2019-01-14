@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC " -//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.security.mapper.UserMapper">
+
+
+
+    <resultMap id="BaseResultMap" type="cn.lilyhuli.bean.User">
+        <id column="id" jdbcType="VARCHAR" property="id" />
+        <result column="username" jdbcType="VARCHAR" property="username" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+        <collection property="roles" ofType="Role">
+            <id column="id" property="id"/>
+            <result column="rolename" property="rolename"/>
+        </collection>
+    </resultMap>
+
+    <select id="selectByUserName" parameterType="String" resultMap="BaseResultMap">
+        select `User`.id,`User`.username,`User`.`password` ,Role.rolename from User
+        LEFT JOIN RoleUser on RoleUser.userId = `User`.id
+        LEFT JOIN Role on Role.id = RoleUser.roleId where User.username = #{username}
+    </select>
+</mapper>

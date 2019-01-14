@@ -1,0 +1,861 @@
+【xkcoding】2019-01-14 21:30:27.295 INFO  [main] c.l.SpringsecurityJwtApplication - Starting SpringsecurityJwtApplication on wangbo-pc with PID 4288 (D:\IdeaProjects\springsecurity_jwt\target\classes started by wangbo in D:\IdeaProjects\springsecurity_jwt)
+【xkcoding】2019-01-14 21:30:27.309 INFO  [main] c.l.SpringsecurityJwtApplication - The following profiles are active: dev
+【xkcoding】2019-01-14 21:30:30.579 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+【xkcoding】2019-01-14 21:30:30.676 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+【xkcoding】2019-01-14 21:30:30.702 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+【xkcoding】2019-01-14 21:30:30.703 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+【xkcoding】2019-01-14 21:30:30.716 INFO  [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\VanDyke Software\Clients\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Windows\System32;D:\Program Files (x86)\IDM Computer Solutions\UEStudio;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Java\apache-maven-3.3.9\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\wangbo\AppData\Local\Microsoft\WindowsApps;C:\Users\wangbo\AppData\Roaming\npm;;C:\Program Files\Microsoft VS Code\bin;.]
+【xkcoding】2019-01-14 21:30:31.112 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+【xkcoding】2019-01-14 21:30:31.113 DEBUG [main] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+【xkcoding】2019-01-14 21:30:31.113 INFO  [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3670 ms
+【xkcoding】2019-01-14 21:30:31.158 ERROR [main] o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationTokenFilter': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.lilyhuli.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+【xkcoding】2019-01-14 21:30:31.199 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+【xkcoding】2019-01-14 21:30:31.228 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+【xkcoding】2019-01-14 21:30:31.237 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+【xkcoding】2019-01-14 21:30:31.507 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in cn.lilyhuli.service.impl.JwtUserDetailsServiceImpl required a bean of type 'cn.lilyhuli.mapper.UserMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cn.lilyhuli.mapper.UserMapper' in your configuration.
+
+【xkcoding】2019-01-14 21:32:37.539 INFO  [main] c.l.SpringsecurityJwtApplication - Starting SpringsecurityJwtApplication on wangbo-pc with PID 20584 (D:\IdeaProjects\springsecurity_jwt\target\classes started by wangbo in D:\IdeaProjects\springsecurity_jwt)
+【xkcoding】2019-01-14 21:32:37.556 INFO  [main] c.l.SpringsecurityJwtApplication - The following profiles are active: dev
+【xkcoding】2019-01-14 21:32:40.278 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+【xkcoding】2019-01-14 21:32:40.299 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+【xkcoding】2019-01-14 21:32:40.311 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+【xkcoding】2019-01-14 21:32:40.311 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+【xkcoding】2019-01-14 21:32:40.321 INFO  [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\VanDyke Software\Clients\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Windows\System32;D:\Program Files (x86)\IDM Computer Solutions\UEStudio;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Java\apache-maven-3.3.9\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\wangbo\AppData\Local\Microsoft\WindowsApps;C:\Users\wangbo\AppData\Roaming\npm;;C:\Program Files\Microsoft VS Code\bin;.]
+【xkcoding】2019-01-14 21:32:40.578 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+【xkcoding】2019-01-14 21:32:40.578 DEBUG [main] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+【xkcoding】2019-01-14 21:32:40.578 INFO  [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2844 ms
+【xkcoding】2019-01-14 21:32:40.618 ERROR [main] o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationTokenFilter': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.lilyhuli.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+【xkcoding】2019-01-14 21:32:40.652 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+【xkcoding】2019-01-14 21:32:40.667 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+【xkcoding】2019-01-14 21:32:40.677 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+【xkcoding】2019-01-14 21:32:40.843 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in cn.lilyhuli.service.impl.JwtUserDetailsServiceImpl required a bean of type 'cn.lilyhuli.mapper.UserMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cn.lilyhuli.mapper.UserMapper' in your configuration.
+
+【xkcoding】2019-01-14 21:34:27.085 INFO  [main] c.l.SpringsecurityJwtApplication - Starting SpringsecurityJwtApplication on wangbo-pc with PID 4584 (D:\IdeaProjects\springsecurity_jwt\target\classes started by wangbo in D:\IdeaProjects\springsecurity_jwt)
+【xkcoding】2019-01-14 21:34:27.095 INFO  [main] c.l.SpringsecurityJwtApplication - The following profiles are active: dev
+【xkcoding】2019-01-14 21:34:28.667 WARN  [main] o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[cn.lilyhuli]' package. Please check your configuration.
+【xkcoding】2019-01-14 21:34:29.938 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+【xkcoding】2019-01-14 21:34:29.957 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+【xkcoding】2019-01-14 21:34:29.972 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+【xkcoding】2019-01-14 21:34:29.973 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+【xkcoding】2019-01-14 21:34:29.983 INFO  [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\VanDyke Software\Clients\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Windows\System32;D:\Program Files (x86)\IDM Computer Solutions\UEStudio;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Java\apache-maven-3.3.9\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\wangbo\AppData\Local\Microsoft\WindowsApps;C:\Users\wangbo\AppData\Roaming\npm;;C:\Program Files\Microsoft VS Code\bin;.]
+【xkcoding】2019-01-14 21:34:30.127 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+【xkcoding】2019-01-14 21:34:30.128 DEBUG [main] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+【xkcoding】2019-01-14 21:34:30.128 INFO  [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2839 ms
+【xkcoding】2019-01-14 21:34:30.176 ERROR [main] o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationTokenFilter': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.lilyhuli.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+【xkcoding】2019-01-14 21:34:30.253 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+【xkcoding】2019-01-14 21:34:30.272 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+【xkcoding】2019-01-14 21:34:30.282 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+【xkcoding】2019-01-14 21:34:30.460 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in cn.lilyhuli.service.impl.JwtUserDetailsServiceImpl required a bean of type 'cn.lilyhuli.mapper.UserMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cn.lilyhuli.mapper.UserMapper' in your configuration.
+
+【xkcoding】2019-01-14 21:36:56.746 INFO  [main] c.l.SpringSecurityJwtApplication - Starting SpringSecurityJwtApplication on wangbo-pc with PID 16440 (D:\IdeaProjects\springsecurity_jwt\target\classes started by wangbo in D:\IdeaProjects\springsecurity_jwt)
+【xkcoding】2019-01-14 21:36:56.768 INFO  [main] c.l.SpringSecurityJwtApplication - The following profiles are active: dev
+【xkcoding】2019-01-14 21:37:01.215 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+【xkcoding】2019-01-14 21:37:01.242 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+【xkcoding】2019-01-14 21:37:01.257 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+【xkcoding】2019-01-14 21:37:01.257 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+【xkcoding】2019-01-14 21:37:01.292 INFO  [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\VanDyke Software\Clients\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Windows\System32;D:\Program Files (x86)\IDM Computer Solutions\UEStudio;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Java\apache-maven-3.3.9\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\wangbo\AppData\Local\Microsoft\WindowsApps;C:\Users\wangbo\AppData\Roaming\npm;;C:\Program Files\Microsoft VS Code\bin;.]
+【xkcoding】2019-01-14 21:37:01.525 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+【xkcoding】2019-01-14 21:37:01.525 DEBUG [main] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+【xkcoding】2019-01-14 21:37:01.525 INFO  [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4428 ms
+【xkcoding】2019-01-14 21:37:02.249 ERROR [main] o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationTokenFilter': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\IdeaProjects\springsecurity_jwt\target\classes\cn\lilyhuli\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+【xkcoding】2019-01-14 21:37:02.314 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+【xkcoding】2019-01-14 21:37:02.323 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+【xkcoding】2019-01-14 21:37:02.340 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+【xkcoding】2019-01-14 21:37:02.389 ERROR [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:157)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at cn.lilyhuli.SpringSecurityJwtApplication.main(SpringSecurityJwtApplication.java:12)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:125)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationTokenFilter': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\IdeaProjects\springsecurity_jwt\target\classes\cn\lilyhuli\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:235)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:193)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:188)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:170)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:89)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:801)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:372)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\IdeaProjects\springsecurity_jwt\target\classes\cn\lilyhuli\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 56 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\IdeaProjects\springsecurity_jwt\target\classes\cn\lilyhuli\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1482)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 69 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1467)
+	... 80 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 93 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$cf5d280e.CGLIB$sqlSessionFactory$2(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$cf5d280e$$FastClassBySpringCGLIB$$6ec4c69b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$cf5d280e.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 94 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521)
+	... 107 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:265)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:252)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:244)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:116)
+	... 109 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 113 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 115 common frames omitted
+【xkcoding】2019-01-14 21:38:45.965 INFO  [main] c.l.SpringSecurityJwtApplication - Starting SpringSecurityJwtApplication on wangbo-pc with PID 8436 (D:\IdeaProjects\springsecurity_jwt\target\classes started by wangbo in D:\IdeaProjects\springsecurity_jwt)
+【xkcoding】2019-01-14 21:38:45.970 INFO  [main] c.l.SpringSecurityJwtApplication - The following profiles are active: dev
+【xkcoding】2019-01-14 21:38:48.995 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+【xkcoding】2019-01-14 21:38:49.012 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+【xkcoding】2019-01-14 21:38:49.025 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+【xkcoding】2019-01-14 21:38:49.025 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+【xkcoding】2019-01-14 21:38:49.036 INFO  [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\VanDyke Software\Clients\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Windows\System32;D:\Program Files (x86)\IDM Computer Solutions\UEStudio;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Java\apache-maven-3.3.9\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\wangbo\AppData\Local\Microsoft\WindowsApps;C:\Users\wangbo\AppData\Roaming\npm;;C:\Program Files\Microsoft VS Code\bin;.]
+【xkcoding】2019-01-14 21:38:49.191 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+【xkcoding】2019-01-14 21:38:49.192 DEBUG [main] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+【xkcoding】2019-01-14 21:38:49.192 INFO  [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3055 ms
+【xkcoding】2019-01-14 21:38:49.496 ERROR [main] o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationTokenFilter': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\IdeaProjects\springsecurity_jwt\target\classes\cn\lilyhuli\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+【xkcoding】2019-01-14 21:38:49.530 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+【xkcoding】2019-01-14 21:38:49.538 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+【xkcoding】2019-01-14 21:38:49.550 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+【xkcoding】2019-01-14 21:38:49.571 ERROR [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:157)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at cn.lilyhuli.SpringSecurityJwtApplication.main(SpringSecurityJwtApplication.java:12)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:125)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationTokenFilter': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\IdeaProjects\springsecurity_jwt\target\classes\cn\lilyhuli\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:235)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:193)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:188)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:170)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:89)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:801)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:372)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\IdeaProjects\springsecurity_jwt\target\classes\cn\lilyhuli\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 56 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\IdeaProjects\springsecurity_jwt\target\classes\cn\lilyhuli\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1482)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 69 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1467)
+	... 80 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 93 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$c1af75c.CGLIB$sqlSessionFactory$1(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$c1af75c$$FastClassBySpringCGLIB$$9b0ac7a4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$c1af75c.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 94 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521)
+	... 107 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:265)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:252)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:244)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:116)
+	... 109 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 113 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 115 common frames omitted
+【xkcoding】2019-01-14 21:39:12.318 INFO  [main] c.l.SpringSecurityJwtApplication - Starting SpringSecurityJwtApplication on wangbo-pc with PID 9500 (D:\IdeaProjects\springsecurity_jwt\target\classes started by wangbo in D:\IdeaProjects\springsecurity_jwt)
+【xkcoding】2019-01-14 21:39:12.325 INFO  [main] c.l.SpringSecurityJwtApplication - The following profiles are active: dev
+【xkcoding】2019-01-14 21:39:15.170 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+【xkcoding】2019-01-14 21:39:15.189 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+【xkcoding】2019-01-14 21:39:15.205 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+【xkcoding】2019-01-14 21:39:15.205 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+【xkcoding】2019-01-14 21:39:15.214 INFO  [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\VanDyke Software\Clients\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Windows\System32;D:\Program Files (x86)\IDM Computer Solutions\UEStudio;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Java\apache-maven-3.3.9\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\wangbo\AppData\Local\Microsoft\WindowsApps;C:\Users\wangbo\AppData\Roaming\npm;;C:\Program Files\Microsoft VS Code\bin;.]
+【xkcoding】2019-01-14 21:39:15.365 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+【xkcoding】2019-01-14 21:39:15.366 DEBUG [main] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+【xkcoding】2019-01-14 21:39:15.366 INFO  [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2843 ms
+【xkcoding】2019-01-14 21:39:15.689 ERROR [main] o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationTokenFilter': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\IdeaProjects\springsecurity_jwt\target\classes\cn\lilyhuli\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+【xkcoding】2019-01-14 21:39:15.736 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+【xkcoding】2019-01-14 21:39:15.746 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+【xkcoding】2019-01-14 21:39:15.780 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+【xkcoding】2019-01-14 21:39:15.806 ERROR [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:157)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at cn.lilyhuli.SpringSecurityJwtApplication.main(SpringSecurityJwtApplication.java:12)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:125)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationTokenFilter': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\IdeaProjects\springsecurity_jwt\target\classes\cn\lilyhuli\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:235)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:193)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:188)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:170)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:89)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:801)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:372)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\IdeaProjects\springsecurity_jwt\target\classes\cn\lilyhuli\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 56 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\IdeaProjects\springsecurity_jwt\target\classes\cn\lilyhuli\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1482)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 69 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1467)
+	... 80 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 93 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IdeaProjects\springsecurity_jwt\target\classes\mapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$a59ec40.CGLIB$sqlSessionFactory$1(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$a59ec40$$FastClassBySpringCGLIB$$35de37f1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$a59ec40.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 94 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521)
+	... 107 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:265)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:252)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:244)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:116)
+	... 109 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.security.entity.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 113 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.example.security.entity.User
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 115 common frames omitted
+【xkcoding】2019-01-14 21:40:00.804 INFO  [main] c.l.SpringSecurityJwtApplication - Starting SpringSecurityJwtApplication on wangbo-pc with PID 15268 (D:\IdeaProjects\springsecurity_jwt\target\classes started by wangbo in D:\IdeaProjects\springsecurity_jwt)
+【xkcoding】2019-01-14 21:40:00.813 INFO  [main] c.l.SpringSecurityJwtApplication - The following profiles are active: dev
+【xkcoding】2019-01-14 21:40:03.740 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+【xkcoding】2019-01-14 21:40:03.767 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+【xkcoding】2019-01-14 21:40:03.781 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+【xkcoding】2019-01-14 21:40:03.781 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+【xkcoding】2019-01-14 21:40:03.791 INFO  [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\VanDyke Software\Clients\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Windows\System32;D:\Program Files (x86)\IDM Computer Solutions\UEStudio;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Java\apache-maven-3.3.9\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\wangbo\AppData\Local\Microsoft\WindowsApps;C:\Users\wangbo\AppData\Roaming\npm;;C:\Program Files\Microsoft VS Code\bin;.]
+【xkcoding】2019-01-14 21:40:03.935 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+【xkcoding】2019-01-14 21:40:03.936 DEBUG [main] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+【xkcoding】2019-01-14 21:40:03.936 INFO  [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2948 ms
+【xkcoding】2019-01-14 21:40:04.985 DEBUG [main] o.s.web.filter.CorsFilter - Filter 'corsFilter' configured for use
+【xkcoding】2019-01-14 21:40:05.385 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@149b4d20, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a08b084, org.springframework.security.web.header.HeaderWriterFilter@44286963, org.springframework.security.web.authentication.logout.LogoutFilter@4db77402, cn.lilyhuli.jwt.JwtAuthenticationTokenFilter@3c0e00a8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36bed37a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23c767e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@664e848c, org.springframework.security.web.session.SessionManagementFilter@5d7911d5, org.springframework.security.web.access.ExceptionTranslationFilter@6048e26a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d615b2e]
+【xkcoding】2019-01-14 21:40:05.500 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+【xkcoding】2019-01-14 21:40:05.788 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+【xkcoding】2019-01-14 21:40:05.828 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+【xkcoding】2019-01-14 21:40:05.936 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+【xkcoding】2019-01-14 21:40:05.968 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+【xkcoding】2019-01-14 21:40:05.999 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+【xkcoding】2019-01-14 21:40:06.327 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+【xkcoding】2019-01-14 21:40:06.343 INFO  [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+【xkcoding】2019-01-14 21:40:06.397 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+【xkcoding】2019-01-14 21:40:06.403 INFO  [main] c.l.SpringSecurityJwtApplication - Started SpringSecurityJwtApplication in 6.674 seconds (JVM running for 9.382)
+【xkcoding】2019-01-14 21:41:25.944 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+【xkcoding】2019-01-14 21:41:25.944 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+【xkcoding】2019-01-14 21:41:25.945 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+【xkcoding】2019-01-14 21:41:25.960 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+【xkcoding】2019-01-14 21:41:25.961 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+【xkcoding】2019-01-14 21:41:25.998 INFO  [http-nio-8080-exec-2] c.l.jwt.JwtAuthenticationTokenFilter - authHeader：null
+【xkcoding】2019-01-14 21:41:26.012 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+【xkcoding】2019-01-14 21:41:26.037 DEBUG [http-nio-8080-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+【xkcoding】2019-01-14 21:41:26.038 DEBUG [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+【xkcoding】2019-01-14 21:41:26.040 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+【xkcoding】2019-01-14 21:41:26.055 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+【xkcoding】2019-01-14 21:41:26.075 DEBUG [http-nio-8080-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+【xkcoding】2019-01-14 21:41:26.253 DEBUG [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+【xkcoding】2019-01-14 21:41:26.254 DEBUG [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jan 14 21:41:26 CST 2019, status=404, error=Not Found, message=No message available, path=/auth/login}]
+【xkcoding】2019-01-14 21:41:26.367 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+【xkcoding】2019-01-14 21:42:11.193 INFO  [http-nio-8080-exec-4] c.l.jwt.JwtAuthenticationTokenFilter - authHeader：null
+【xkcoding】2019-01-14 21:42:11.194 DEBUG [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+【xkcoding】2019-01-14 21:42:11.194 DEBUG [http-nio-8080-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+【xkcoding】2019-01-14 21:42:11.196 DEBUG [http-nio-8080-exec-4] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+【xkcoding】2019-01-14 21:42:11.197 DEBUG [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+【xkcoding】2019-01-14 21:42:11.198 DEBUG [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+【xkcoding】2019-01-14 21:42:11.199 DEBUG [http-nio-8080-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+【xkcoding】2019-01-14 21:42:11.200 DEBUG [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+【xkcoding】2019-01-14 21:42:11.201 DEBUG [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jan 14 21:42:11 CST 2019, status=404, error=Not Found, message=No message available, path=/auth/login}]
+【xkcoding】2019-01-14 21:42:11.202 DEBUG [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+【xkcoding】2019-01-14 21:43:37.584 INFO  [http-nio-8080-exec-6] c.l.jwt.JwtAuthenticationTokenFilter - authHeader：null
+【xkcoding】2019-01-14 21:43:37.586 DEBUG [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+【xkcoding】2019-01-14 21:43:37.587 DEBUG [http-nio-8080-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+【xkcoding】2019-01-14 21:43:37.589 DEBUG [http-nio-8080-exec-6] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+【xkcoding】2019-01-14 21:43:37.590 DEBUG [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+【xkcoding】2019-01-14 21:43:37.592 DEBUG [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+【xkcoding】2019-01-14 21:43:37.593 DEBUG [http-nio-8080-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+【xkcoding】2019-01-14 21:43:37.602 DEBUG [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+【xkcoding】2019-01-14 21:43:37.603 DEBUG [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jan 14 21:43:37 CST 2019, status=404, error=Not Found, message=No message available, path=/auth/login}]
+【xkcoding】2019-01-14 21:43:37.605 DEBUG [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+【xkcoding】2019-01-14 21:43:52.390 INFO  [http-nio-8080-exec-8] c.l.jwt.JwtAuthenticationTokenFilter - authHeader：null
+【xkcoding】2019-01-14 21:43:52.391 DEBUG [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+【xkcoding】2019-01-14 21:43:52.394 DEBUG [http-nio-8080-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+【xkcoding】2019-01-14 21:43:52.396 DEBUG [http-nio-8080-exec-8] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+【xkcoding】2019-01-14 21:43:52.396 DEBUG [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+【xkcoding】2019-01-14 21:43:52.397 DEBUG [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+【xkcoding】2019-01-14 21:43:52.399 DEBUG [http-nio-8080-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+【xkcoding】2019-01-14 21:43:52.400 DEBUG [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+【xkcoding】2019-01-14 21:43:52.401 DEBUG [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jan 14 21:43:52 CST 2019, status=404, error=Not Found, message=No message available, path=/auth/login}]
+【xkcoding】2019-01-14 21:43:52.402 DEBUG [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+【xkcoding】2019-01-14 21:43:53.613 INFO  [http-nio-8080-exec-7] c.l.jwt.JwtAuthenticationTokenFilter - authHeader：null
+【xkcoding】2019-01-14 21:43:53.613 DEBUG [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+【xkcoding】2019-01-14 21:43:53.614 DEBUG [http-nio-8080-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+【xkcoding】2019-01-14 21:43:53.616 DEBUG [http-nio-8080-exec-7] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+【xkcoding】2019-01-14 21:43:53.616 DEBUG [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+【xkcoding】2019-01-14 21:43:53.617 DEBUG [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+【xkcoding】2019-01-14 21:43:53.619 DEBUG [http-nio-8080-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+【xkcoding】2019-01-14 21:43:53.620 DEBUG [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+【xkcoding】2019-01-14 21:43:53.621 DEBUG [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jan 14 21:43:53 CST 2019, status=404, error=Not Found, message=No message available, path=/auth/login}]
+【xkcoding】2019-01-14 21:43:53.623 DEBUG [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+【xkcoding】2019-01-14 21:44:02.884 INFO  [http-nio-8080-exec-9] c.l.jwt.JwtAuthenticationTokenFilter - authHeader：null
+【xkcoding】2019-01-14 21:44:02.884 DEBUG [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+【xkcoding】2019-01-14 21:44:02.885 DEBUG [http-nio-8080-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+【xkcoding】2019-01-14 21:44:02.887 DEBUG [http-nio-8080-exec-9] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+【xkcoding】2019-01-14 21:44:02.896 DEBUG [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+【xkcoding】2019-01-14 21:44:02.897 DEBUG [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+【xkcoding】2019-01-14 21:44:02.899 DEBUG [http-nio-8080-exec-9] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+【xkcoding】2019-01-14 21:44:02.900 DEBUG [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+【xkcoding】2019-01-14 21:44:02.900 DEBUG [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jan 14 21:44:02 CST 2019, status=404, error=Not Found, message=No message available, path=/auth/login}]
+【xkcoding】2019-01-14 21:44:02.902 DEBUG [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+【xkcoding】2019-01-14 21:44:50.744 INFO  [http-nio-8080-exec-10] c.l.jwt.JwtAuthenticationTokenFilter - authHeader：null
+【xkcoding】2019-01-14 21:44:50.746 DEBUG [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+【xkcoding】2019-01-14 21:44:50.747 DEBUG [http-nio-8080-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+【xkcoding】2019-01-14 21:44:50.749 DEBUG [http-nio-8080-exec-10] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+【xkcoding】2019-01-14 21:44:50.750 DEBUG [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+【xkcoding】2019-01-14 21:44:50.751 DEBUG [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+【xkcoding】2019-01-14 21:44:50.753 DEBUG [http-nio-8080-exec-10] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+【xkcoding】2019-01-14 21:44:50.754 DEBUG [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+【xkcoding】2019-01-14 21:44:50.755 DEBUG [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jan 14 21:44:50 CST 2019, status=404, error=Not Found, message=No message available, path=/auth/login}]
+【xkcoding】2019-01-14 21:44:50.757 DEBUG [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+【xkcoding】2019-01-14 21:46:24.087 INFO  [main] c.l.SpringSecurityJwtApplication - Starting SpringSecurityJwtApplication on wangbo-pc with PID 18552 (D:\IdeaProjects\springsecurity_jwt\target\classes started by wangbo in D:\IdeaProjects\springsecurity_jwt)
+【xkcoding】2019-01-14 21:46:24.092 INFO  [main] c.l.SpringSecurityJwtApplication - The following profiles are active: dev
+【xkcoding】2019-01-14 21:46:27.107 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+【xkcoding】2019-01-14 21:46:27.126 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+【xkcoding】2019-01-14 21:46:27.139 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+【xkcoding】2019-01-14 21:46:27.139 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+【xkcoding】2019-01-14 21:46:27.149 INFO  [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\VanDyke Software\Clients\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Windows\System32;D:\Program Files (x86)\IDM Computer Solutions\UEStudio;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Java\apache-maven-3.3.9\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\wangbo\AppData\Local\Microsoft\WindowsApps;C:\Users\wangbo\AppData\Roaming\npm;;C:\Program Files\Microsoft VS Code\bin;.]
+【xkcoding】2019-01-14 21:46:27.340 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+【xkcoding】2019-01-14 21:46:27.341 DEBUG [main] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+【xkcoding】2019-01-14 21:46:27.341 INFO  [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3104 ms
+【xkcoding】2019-01-14 21:46:28.310 DEBUG [main] o.s.web.filter.CorsFilter - Filter 'corsFilter' configured for use
+【xkcoding】2019-01-14 21:46:28.525 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@750ed637, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a4aadf8, org.springframework.security.web.header.HeaderWriterFilter@3ab35b9c, org.springframework.security.web.authentication.logout.LogoutFilter@b5c6a30, cn.lilyhuli.jwt.JwtAuthenticationTokenFilter@2ffb3aec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a682d35, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67f63d26, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5190010f, org.springframework.security.web.session.SessionManagementFilter@535a518c, org.springframework.security.web.access.ExceptionTranslationFilter@3c232051, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c241a9f]
+【xkcoding】2019-01-14 21:46:28.624 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+【xkcoding】2019-01-14 21:46:28.779 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+【xkcoding】2019-01-14 21:46:28.799 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+【xkcoding】2019-01-14 21:46:28.879 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+【xkcoding】2019-01-14 21:46:28.912 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+【xkcoding】2019-01-14 21:46:28.926 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+【xkcoding】2019-01-14 21:46:29.235 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+【xkcoding】2019-01-14 21:46:29.254 INFO  [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+【xkcoding】2019-01-14 21:46:29.289 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+【xkcoding】2019-01-14 21:46:29.296 INFO  [main] c.l.SpringSecurityJwtApplication - Started SpringSecurityJwtApplication in 6.441 seconds (JVM running for 9.108)
+【xkcoding】2019-01-14 21:46:38.769 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+【xkcoding】2019-01-14 21:46:38.770 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+【xkcoding】2019-01-14 21:46:38.770 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+【xkcoding】2019-01-14 21:46:38.782 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+【xkcoding】2019-01-14 21:46:38.782 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+【xkcoding】2019-01-14 21:46:38.803 INFO  [http-nio-8080-exec-2] c.l.jwt.JwtAuthenticationTokenFilter - authHeader：null
+【xkcoding】2019-01-14 21:46:38.816 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+【xkcoding】2019-01-14 21:46:38.825 DEBUG [http-nio-8080-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+【xkcoding】2019-01-14 21:46:38.826 DEBUG [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+【xkcoding】2019-01-14 21:46:38.828 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+【xkcoding】2019-01-14 21:46:38.834 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+【xkcoding】2019-01-14 21:46:38.844 DEBUG [http-nio-8080-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+【xkcoding】2019-01-14 21:46:38.893 DEBUG [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+【xkcoding】2019-01-14 21:46:38.895 DEBUG [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jan 14 21:46:38 CST 2019, status=404, error=Not Found, message=No message available, path=/auth/login}]
+【xkcoding】2019-01-14 21:46:38.979 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+【xkcoding】2019-01-14 21:46:42.292 INFO  [http-nio-8080-exec-4] c.l.jwt.JwtAuthenticationTokenFilter - authHeader：null
+【xkcoding】2019-01-14 21:46:42.293 DEBUG [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+【xkcoding】2019-01-14 21:46:42.294 DEBUG [http-nio-8080-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+【xkcoding】2019-01-14 21:46:42.296 DEBUG [http-nio-8080-exec-4] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+【xkcoding】2019-01-14 21:46:42.296 DEBUG [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+【xkcoding】2019-01-14 21:46:42.297 DEBUG [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+【xkcoding】2019-01-14 21:46:42.298 DEBUG [http-nio-8080-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+【xkcoding】2019-01-14 21:46:42.300 DEBUG [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+【xkcoding】2019-01-14 21:46:42.301 DEBUG [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jan 14 21:46:42 CST 2019, status=404, error=Not Found, message=No message available, path=/auth/login}]
+【xkcoding】2019-01-14 21:46:42.303 DEBUG [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+【xkcoding】2019-01-14 21:46:47.198 INFO  [http-nio-8080-exec-3] c.l.jwt.JwtAuthenticationTokenFilter - authHeader：null
+【xkcoding】2019-01-14 21:46:47.199 DEBUG [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+【xkcoding】2019-01-14 21:46:47.200 DEBUG [http-nio-8080-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+【xkcoding】2019-01-14 21:46:47.201 DEBUG [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+【xkcoding】2019-01-14 21:46:47.201 DEBUG [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+【xkcoding】2019-01-14 21:46:47.202 DEBUG [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+【xkcoding】2019-01-14 21:46:47.204 DEBUG [http-nio-8080-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+【xkcoding】2019-01-14 21:46:47.204 DEBUG [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+【xkcoding】2019-01-14 21:46:47.205 DEBUG [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jan 14 21:46:47 CST 2019, status=404, error=Not Found, message=No message available, path=/auth/login}]
+【xkcoding】2019-01-14 21:46:47.207 DEBUG [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+【xkcoding】2019-01-14 21:51:29.482 INFO  [http-nio-8080-exec-6] c.l.jwt.JwtAuthenticationTokenFilter - authHeader：null
+【xkcoding】2019-01-14 21:51:29.483 DEBUG [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+【xkcoding】2019-01-14 21:51:29.485 DEBUG [http-nio-8080-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+【xkcoding】2019-01-14 21:51:29.487 DEBUG [http-nio-8080-exec-6] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+【xkcoding】2019-01-14 21:51:29.487 INFO  [http-nio-8080-exec-9] c.l.jwt.JwtAuthenticationTokenFilter - authHeader：null
+【xkcoding】2019-01-14 21:51:29.488 DEBUG [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+【xkcoding】2019-01-14 21:51:29.489 DEBUG [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+【xkcoding】2019-01-14 21:51:29.491 DEBUG [http-nio-8080-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+【xkcoding】2019-01-14 21:51:29.491 DEBUG [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+【xkcoding】2019-01-14 21:51:29.492 DEBUG [http-nio-8080-exec-9] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+【xkcoding】2019-01-14 21:51:29.493 DEBUG [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+【xkcoding】2019-01-14 21:51:29.493 DEBUG [http-nio-8080-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+【xkcoding】2019-01-14 21:51:29.495 DEBUG [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+【xkcoding】2019-01-14 21:51:29.495 DEBUG [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+【xkcoding】2019-01-14 21:51:29.496 DEBUG [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jan 14 21:51:29 CST 2019, status=404, error=Not Found, message=No message available, path=/auth/login}]
+【xkcoding】2019-01-14 21:51:29.497 DEBUG [http-nio-8080-exec-9] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+【xkcoding】2019-01-14 21:51:29.498 DEBUG [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+【xkcoding】2019-01-14 21:51:29.498 DEBUG [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+【xkcoding】2019-01-14 21:51:29.498 DEBUG [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jan 14 21:51:29 CST 2019, status=404, error=Not Found, message=No message available, path=/auth/login}]
+【xkcoding】2019-01-14 21:51:29.501 DEBUG [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+【xkcoding】2019-01-14 21:53:59.233 INFO  [main] c.l.SpringSecurityJwtApplication - Starting SpringSecurityJwtApplication on wangbo-pc with PID 16544 (D:\IdeaProjects\springsecurity_jwt\target\classes started by wangbo in D:\IdeaProjects\springsecurity_jwt)
+【xkcoding】2019-01-14 21:53:59.241 INFO  [main] c.l.SpringSecurityJwtApplication - The following profiles are active: dev
+【xkcoding】2019-01-14 21:54:02.180 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+【xkcoding】2019-01-14 21:54:02.198 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+【xkcoding】2019-01-14 21:54:02.210 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+【xkcoding】2019-01-14 21:54:02.210 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+【xkcoding】2019-01-14 21:54:02.220 INFO  [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\VanDyke Software\Clients\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Windows\System32;D:\Program Files (x86)\IDM Computer Solutions\UEStudio;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Java\apache-maven-3.3.9\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\wangbo\AppData\Local\Microsoft\WindowsApps;C:\Users\wangbo\AppData\Roaming\npm;;C:\Program Files\Microsoft VS Code\bin;.]
+【xkcoding】2019-01-14 21:54:02.366 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+【xkcoding】2019-01-14 21:54:02.366 DEBUG [main] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+【xkcoding】2019-01-14 21:54:02.366 INFO  [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2983 ms
+【xkcoding】2019-01-14 21:54:03.246 DEBUG [main] o.s.web.filter.CorsFilter - Filter 'corsFilter' configured for use
+【xkcoding】2019-01-14 21:54:03.438 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47829d6d, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c748a15, org.springframework.security.web.header.HeaderWriterFilter@270a620, org.springframework.security.web.authentication.logout.LogoutFilter@5ff6dd3c, cn.lilyhuli.jwt.JwtAuthenticationTokenFilter@77fa9381, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@115dcaea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2785db06, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f677247, org.springframework.security.web.session.SessionManagementFilter@667dcaad, org.springframework.security.web.access.ExceptionTranslationFilter@46fb0c33, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e8fb66f]
+【xkcoding】2019-01-14 21:54:03.532 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+【xkcoding】2019-01-14 21:54:03.732 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+【xkcoding】2019-01-14 21:54:03.759 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+【xkcoding】2019-01-14 21:54:03.837 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+【xkcoding】2019-01-14 21:54:03.870 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+【xkcoding】2019-01-14 21:54:03.885 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+【xkcoding】2019-01-14 21:54:04.137 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+【xkcoding】2019-01-14 21:54:04.160 INFO  [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+【xkcoding】2019-01-14 21:54:04.184 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+【xkcoding】2019-01-14 21:54:04.190 INFO  [main] c.l.SpringSecurityJwtApplication - Started SpringSecurityJwtApplication in 6.087 seconds (JVM running for 8.581)
+【xkcoding】2019-01-14 21:54:15.045 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+【xkcoding】2019-01-14 21:54:15.046 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+【xkcoding】2019-01-14 21:54:15.046 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+【xkcoding】2019-01-14 21:54:15.057 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+【xkcoding】2019-01-14 21:54:15.058 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+【xkcoding】2019-01-14 21:54:21.625 INFO  [http-nio-8080-exec-2] c.l.jwt.JwtAuthenticationTokenFilter - authHeader：null
+【xkcoding】2019-01-14 21:54:21.645 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+【xkcoding】2019-01-14 21:54:21.656 DEBUG [http-nio-8080-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+【xkcoding】2019-01-14 21:54:21.659 DEBUG [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+【xkcoding】2019-01-14 21:54:21.662 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+【xkcoding】2019-01-14 21:54:21.670 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+【xkcoding】2019-01-14 21:54:21.682 DEBUG [http-nio-8080-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+【xkcoding】2019-01-14 21:54:21.755 DEBUG [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+【xkcoding】2019-01-14 21:54:21.756 DEBUG [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jan 14 21:54:21 CST 2019, status=404, error=Not Found, message=No message available, path=/auth/login}]
+【xkcoding】2019-01-14 21:54:21.848 DEBUG [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+【xkcoding】2019-01-14 21:57:49.985 INFO  [main] c.l.SpringSecurityJwtApplication - Starting SpringSecurityJwtApplication on wangbo-pc with PID 18880 (D:\IdeaProjects\springsecurity_jwt\target\classes started by wangbo in D:\IdeaProjects\springsecurity_jwt)
+【xkcoding】2019-01-14 21:57:50.004 INFO  [main] c.l.SpringSecurityJwtApplication - The following profiles are active: dev
+【xkcoding】2019-01-14 21:57:53.059 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+【xkcoding】2019-01-14 21:57:53.081 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+【xkcoding】2019-01-14 21:57:53.094 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+【xkcoding】2019-01-14 21:57:53.094 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+【xkcoding】2019-01-14 21:57:53.104 INFO  [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\VanDyke Software\Clients\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Windows\System32;D:\Program Files (x86)\IDM Computer Solutions\UEStudio;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Java\apache-maven-3.3.9\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\wangbo\AppData\Local\Microsoft\WindowsApps;C:\Users\wangbo\AppData\Roaming\npm;;C:\Program Files\Microsoft VS Code\bin;.]
+【xkcoding】2019-01-14 21:57:53.263 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+【xkcoding】2019-01-14 21:57:53.263 DEBUG [main] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+【xkcoding】2019-01-14 21:57:53.263 INFO  [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3079 ms
+【xkcoding】2019-01-14 21:57:54.237 DEBUG [main] o.s.web.filter.CorsFilter - Filter 'corsFilter' configured for use
+【xkcoding】2019-01-14 21:57:54.489 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@706ceca6, org.springframework.security.web.context.SecurityContextPersistenceFilter@2accaec2, org.springframework.security.web.header.HeaderWriterFilter@5099c59b, org.springframework.security.web.authentication.logout.LogoutFilter@1946384, cn.lilyhuli.jwt.JwtAuthenticationTokenFilter@51dae791, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@83bb0f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d42542, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f6329cb, org.springframework.security.web.session.SessionManagementFilter@1095d23a, org.springframework.security.web.access.ExceptionTranslationFilter@5eb5da12, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d88e6b9]
+【xkcoding】2019-01-14 21:57:54.604 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+【xkcoding】2019-01-14 21:57:54.781 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+【xkcoding】2019-01-14 21:57:54.805 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+【xkcoding】2019-01-14 21:57:54.890 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+【xkcoding】2019-01-14 21:57:54.933 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+【xkcoding】2019-01-14 21:57:54.952 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+【xkcoding】2019-01-14 21:57:55.248 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+【xkcoding】2019-01-14 21:57:55.279 INFO  [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+【xkcoding】2019-01-14 21:57:55.325 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+【xkcoding】2019-01-14 21:57:55.335 INFO  [main] c.l.SpringSecurityJwtApplication - Started SpringSecurityJwtApplication in 6.534 seconds (JVM running for 9.249)
+【xkcoding】2019-01-14 21:58:45.082 INFO  [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+【xkcoding】2019-01-14 21:58:45.082 INFO  [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+【xkcoding】2019-01-14 21:58:45.083 DEBUG [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+【xkcoding】2019-01-14 21:58:45.097 DEBUG [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+【xkcoding】2019-01-14 21:58:45.098 INFO  [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+【xkcoding】2019-01-14 21:58:49.322 INFO  [http-nio-8080-exec-3] c.l.jwt.JwtAuthenticationTokenFilter - authHeader：null
+【xkcoding】2019-01-14 21:58:49.362 DEBUG [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+【xkcoding】2019-01-14 21:58:49.405 DEBUG [http-nio-8080-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+【xkcoding】2019-01-14 21:58:49.424 DEBUG [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+【xkcoding】2019-01-14 21:58:49.430 DEBUG [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+【xkcoding】2019-01-14 21:58:49.547 DEBUG [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+【xkcoding】2019-01-14 21:58:49.575 DEBUG [http-nio-8080-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+【xkcoding】2019-01-14 21:58:49.675 DEBUG [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+【xkcoding】2019-01-14 21:58:49.677 DEBUG [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Jan 14 21:58:49 CST 2019, status=404, error=Not Found, message=No message available, path=/auth/login}]
+【xkcoding】2019-01-14 21:58:49.824 DEBUG [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404

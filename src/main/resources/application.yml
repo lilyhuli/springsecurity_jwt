@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+jwt:
+  header: jwtHeader
+  secret: eyJleHAiOjE1NDMyMDUyODUsInN1YiI6ImFkbWluIiwiY3JlYXRlZCI6MTU0MDYxMzI4N
+  expiration: 3600000   #∫¡√Î
+  route:
+    login: /auth/login
+    refresh: /auth/refresh
+    register: /auth/register
+#mybatis≈‰÷√
+mybatis:
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+  type-aliases-package: cn.lilyhuli.bean
+server:
+  port: 8080
